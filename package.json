@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "SuperGenPass for command line and Node.js modules",
   "main": "supergenpass.js",
+  "bin": {
+    "supergenpass": "supergenpass-bin.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +23,8 @@
   },
   "homepage": "https://github.com/denis-sokolov/supergenpass-bin",
   "dependencies": {
+    "argparse": "^0.1.15",
+    "simple-prompt": "^0.2.1",
     "supergenpass-lib": "^1.0.0"
   }
 }
