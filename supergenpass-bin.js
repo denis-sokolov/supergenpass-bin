@@ -11,13 +11,20 @@ var parser = new (require('argparse').ArgumentParser)({
 	description: cfg.description
 });
 parser.addArgument(['domain'], {help: 'Domain to generate the password for'});
+parser.addArgument(['-l', '--length'], {
+	defaultValue: 10,
+	help: 'Length of the generated password',
+	type: 'int'
+});
 parser.addArgument(['-p', '--password'], {help: 'Master password'});
 var args = parser.parseArgs();
 
 
 var output = function(args) {
 	process.stdout.write(
-		supergenpass(args.password, args.domain) + '\n'
+		supergenpass(args.password, args.domain, {
+			length: args.length
+		}) + '\n'
 	);
 };
 
