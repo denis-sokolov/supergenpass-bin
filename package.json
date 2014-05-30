@@ -1,0 +1,25 @@
+{
+  "name": "supergenpass",
+  "version": "0.1.0",
+  "description": "SuperGenPass for command line and Node.js modules",
+  "main": "supergenpass.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/denis-sokolov/supergenpass-bin.git"
+  },
+  "keywords": [
+    "supergenpass"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denis-sokolov/supergenpass-bin/issues"
+  },
+  "homepage": "https://github.com/denis-sokolov/supergenpass-bin",
+  "dependencies": {
+    "supergenpass-lib": "^1.0.0"
+  }
+}
