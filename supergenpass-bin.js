@@ -16,6 +16,12 @@ parser.addArgument(['-l', '--length'], {
 	help: 'Length of the generated password',
 	type: 'int'
 });
+parser.addArgument(['-m', '--method'], {
+	choices: ['md5', 'sha512'],
+	defaultValue: 'md5',
+	help: 'Hash function to use',
+	type: 'string'
+});
 parser.addArgument(['-p', '--password'], {help: 'Master password'});
 var args = parser.parseArgs();
 
@@ -23,7 +29,8 @@ var args = parser.parseArgs();
 var output = function(args) {
 	process.stdout.write(
 		supergenpass(args.password, args.domain, {
-			length: args.length
+			length: args.length,
+			method: args.method
 		}) + '\n'
 	);
 };
