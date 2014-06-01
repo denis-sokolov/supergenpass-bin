@@ -23,6 +23,10 @@ parser.addArgument(['-m', '--method'], {
 	type: 'string'
 });
 parser.addArgument(['-p', '--password'], {help: 'Master password'});
+parser.addArgument(['--secret'], {
+	defaultValue: '',
+	help: 'Additional secret password'
+});
 var args = parser.parseArgs();
 
 
@@ -30,7 +34,8 @@ var output = function(args) {
 	process.stdout.write(
 		supergenpass(args.password, args.domain, {
 			length: args.length,
-			method: args.method
+			method: args.method,
+			secret: args.secret
 		}) + '\n'
 	);
 };
