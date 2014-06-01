@@ -23,6 +23,11 @@ parser.addArgument(['-m', '--method'], {
 	type: 'string'
 });
 parser.addArgument(['-p', '--password'], {help: 'Master password'});
+parser.addArgument(['--keepSubdomains'], {
+	action: 'storeTrue',
+	default: false,
+	help: 'Do not perform subdomain removal'
+});
 parser.addArgument(['--secret'], {
 	defaultValue: '',
 	help: 'Additional secret password'
@@ -35,6 +40,7 @@ var output = function(args) {
 		supergenpass(args.password, args.domain, {
 			length: args.length,
 			method: args.method,
+			removeSubdomains: !args.keepSubdomains,
 			secret: args.secret
 		}) + '\n'
 	);
