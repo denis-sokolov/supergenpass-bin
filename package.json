@@ -24,7 +24,7 @@
   "homepage": "https://github.com/denis-sokolov/supergenpass-bin",
   "dependencies": {
     "argparse": "^0.1.15",
-    "simple-prompt": "^0.2.1",
+    "pw": "0.0.4",
     "supergenpass-lib": "^1.0.0"
   }
 }

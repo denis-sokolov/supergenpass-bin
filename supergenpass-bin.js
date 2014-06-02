@@ -1,5 +1,5 @@
 var argparse = require('argparse');
-var prompt = require('simple-prompt');
+var prompt = require('pw');
 
 var cfg = require('./package.json');
 var supergenpass = require('./supergenpass.js');
@@ -50,12 +50,10 @@ var output = function(args) {
 if (args.password) {
 	output(args);
 } else {
-	(new prompt([{
-		question: 'Master password',
-		required: true
-	}])).create().then(function(err, result){
-		if (err) throw err;
-		args.password = result.Masterpassword;
+	process.stderr.write('Master password: ');
+	prompt('', function(password){
+		if (!password.length) process.exit(1);
+		args.password = password;
 		output(args);
 	});
 }
