@@ -1,6 +1,6 @@
 {
   "name": "supergenpass",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "SuperGenPass for command line and Node.js modules",
   "main": "supergenpass.js",
   "bin": {
