@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var argparse = require('argparse');
 var prompt = require('pw');
 
