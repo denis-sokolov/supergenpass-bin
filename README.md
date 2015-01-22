@@ -1,5 +1,9 @@
 # API usage
 
+[![Code Climate](https://codeclimate.com/github/denis-sokolov/supergenpass-bin/badges/gpa.svg)](https://codeclimate.com/github/denis-sokolov/supergenpass-bin)
+[![bitHound Score](https://app.bithound.io/denis-sokolov/supergenpass-bin/badges/score.svg)](http://app.bithound.io/denis-sokolov/supergenpass-bin)
+[![Dependency Status](https://gemnasium.com/denis-sokolov/supergenpass-bin.svg)](https://gemnasium.com/denis-sokolov/supergenpass-bin)
+
 ```js
 var supergenpass = require('supergenpass');
 
