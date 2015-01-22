@@ -25,6 +25,6 @@
   "dependencies": {
     "argparse": "^0.1.15",
     "pw": "0.0.4",
-    "supergenpass-lib": "^1.0.0"
+    "supergenpass-lib": "^2.0.0"
   }
 }

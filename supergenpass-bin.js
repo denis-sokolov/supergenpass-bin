@@ -37,14 +37,14 @@ var args = parser.parseArgs();
 
 
 var output = function(args) {
-	process.stdout.write(
-		supergenpass(args.password, args.domain, {
-			length: args.length,
-			method: args.method,
-			removeSubdomains: !args.keepSubdomains,
-			secret: args.secret
-		}) + '\n'
-	);
+	supergenpass(args.password, args.domain, {
+		length: args.length,
+		method: args.method,
+		removeSubdomains: !args.keepSubdomains,
+		secret: args.secret
+	}, function(generated){
+		process.stdout.write(generated + '\n');
+	});
 };
 
 
