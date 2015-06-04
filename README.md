@@ -2,6 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/github/denis-sokolov/supergenpass-bin/badges/gpa.svg)](https://codeclimate.com/github/denis-sokolov/supergenpass-bin)
 [![bitHound Score](https://app.bithound.io/denis-sokolov/supergenpass-bin/badges/score.svg)](http://app.bithound.io/denis-sokolov/supergenpass-bin)
+[![Codacy Badge](https://www.codacy.com/project/badge/9ad98d7c03284ae189f3497c7010b556)](https://www.codacy.com/app/denis_2849/supergenpass-bin)
 [![Dependency Status](https://gemnasium.com/denis-sokolov/supergenpass-bin.svg)](https://gemnasium.com/denis-sokolov/supergenpass-bin)
 
 ```js
