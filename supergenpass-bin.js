@@ -6,7 +6,7 @@ var cfg = require('./package.json');
 var supergenpass = require('./supergenpass.js');
 
 
-var parser = new (require('argparse').ArgumentParser)({
+var parser = new argparse.ArgumentParser({
 	version: cfg.version,
 	addHelp: true,
 	description: cfg.description
