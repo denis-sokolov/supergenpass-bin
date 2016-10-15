@@ -37,7 +37,7 @@ var args = parser.parseArgs();
 
 
 var output = function(args) {
-	supergenpass(args.password, args.domain, {
+	supergenpass.generate(args.password, args.domain, {
 		length: args.length,
 		method: args.method,
 		removeSubdomains: !args.keepSubdomains,

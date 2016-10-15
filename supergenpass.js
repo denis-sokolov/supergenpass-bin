@@ -1,1 +1,1 @@
-module.exports = require('supergenpass-lib');
+module.exports = require('supergenpass-lib').generate;
