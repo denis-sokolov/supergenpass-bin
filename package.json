@@ -1,6 +1,6 @@
 {
   "name": "supergenpass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SuperGenPass for command line and Node.js modules",
   "main": "src/index.js",
   "bin": {
