@@ -7,6 +7,7 @@
     "supergenpass": "src/bin.js"
   },
   "scripts": {
+    "ci": "npm test",
     "lint": "eslint src",
     "test": "npm run lint"
   },
