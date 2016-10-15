@@ -2,8 +2,8 @@
 var argparse = require('argparse');
 var prompt = require('pw');
 
-var cfg = require('./package.json');
-var supergenpass = require('./supergenpass.js');
+var cfg = require('../package.json');
+var supergenpass = require('./index.js');
 
 
 var parser = new argparse.ArgumentParser({
@@ -37,7 +37,7 @@ var args = parser.parseArgs();
 
 
 var output = function(args) {
-	supergenpass.generate(args.password, args.domain, {
+	supergenpass(args.password, args.domain, {
 		length: args.length,
 		method: args.method,
 		removeSubdomains: !args.keepSubdomains,

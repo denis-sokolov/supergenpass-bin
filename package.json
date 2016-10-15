@@ -2,9 +2,9 @@
   "name": "supergenpass",
   "version": "1.0.1",
   "description": "SuperGenPass for command line and Node.js modules",
-  "main": "supergenpass.js",
+  "main": "src/index.js",
   "bin": {
-    "supergenpass": "supergenpass-bin.js"
+    "supergenpass": "src/bin.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,5 +26,8 @@
     "argparse": "^1.0.2",
     "pw": "0.0.4",
     "supergenpass-lib": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.0"
   }
 }
