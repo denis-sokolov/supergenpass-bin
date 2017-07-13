@@ -30,7 +30,7 @@
     "supergenpass-lib": "^3.0.1"
   },
   "devDependencies": {
-    "ava": "^0.18.0",
+    "ava": "^0.21.0",
     "eslint": "^4.1.0"
   }
 }
